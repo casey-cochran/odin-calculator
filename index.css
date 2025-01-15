@@ -1,0 +1,68 @@
+html, body, * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    height: 600px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 5% auto;
+    width: 420px
+}
+
+.answer {
+    min-width: 395px;
+    padding: 25px 15px 25px 25px;
+    text-align: end;
+    background-color: grey;
+    margin: 2px 0;
+    font-size: 62px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    height: 500px;
+    min-width: 400px;
+    margin: 2px;
+}
+
+.row div {
+    flex: 1;
+    padding: 10px 20px;
+    margin: 0 2px;
+    border-radius: 5px;
+}
+
+.symbol, .number, .decimal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.number.zero {
+    /* flex: 2; */
+    flex-basis: 35%;
+}
+
+.symbol {
+    background-color: #FF8F1F;
+    color: black;
+}
+
+.symbol-blue {
+    background-color: dodgerblue;
+    color: black;
+}
+
+.number, .decimal {
+    background-color: #217C7E;
+    color: black;
+}
